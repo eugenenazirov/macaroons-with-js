@@ -433,7 +433,7 @@ body {
     display: none;
 }
 
-.input_order-data {
+.input__group {
     margin-bottom: 15px;
 }
 
@@ -441,6 +441,16 @@ body {
     width: 100%;
     padding: 21px;
     font-size: 18px;
+}
+
+.form__error {
+    display: block;
+    color: #d40c32;
+    margin: 5px 0 5px 5px;
+}
+
+.input__border-error {
+    border-color: #d40c32;
 }
 
 .strawberry_left {
@@ -653,7 +663,7 @@ body {
     }
 }
 
-.menu__close {
+.hidden {
     display: none;
 }
 

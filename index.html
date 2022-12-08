@@ -17,7 +17,7 @@
                 <a class="logo__link" href="#">macaroons</a>
             </div>
             <nav class="menu" id="menu">
-                <div class="menu__close">
+                <div class="hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                          width="50" height="50"
                          viewBox="0 0 50 50">
@@ -187,22 +187,25 @@
             <h2 class="order__title">Закажите макарун!</h2>
             <p class="order__description">Выберите понравившийся макарун, заполните форму и ожидайте звонка нашего
                 пекаря!</p>
-            <form action="https://webhook.site/4c861c0d-1c30-4fdc-8ba1-b40a8b5dc8ad" method="post" class="order__form">
+            <form action="" method="post" class="order__form">
                 <label class="form__label form__label_choice">
                     <span class="form__input-title">Ваш выбор</span>
                     <input type="text" name="order" class="input" placeholder="Напишите, что хотите заказать...">
+                    <span class="form__error hidden">* Необходимо заполнить поле заказа</span>
                 </label>
                 <label class="form__label">
                     <span class="form__input-title">Заполните данные для заказа</span>
-                    <label>
+                    <div class="input__group">
                         <span class="form__silent-label">Ваше имя</span>
                         <input type="text" name="name" class="input input_order-data" placeholder="Ваше имя">
-                    </label>
-                    <label>
+                        <span class="form__error hidden">* Необходимо ввести имя</span>
+                    </div>
+                    <div class="input__group">
                         <span class="form__silent-label">Ваш телефон</span>
                         <input type="tel" name="phone" class="input input_order-data" placeholder="+375 (__) ___ - __ - __"
                                maxlength="19">
-                    </label>
+                        <span class="form__error hidden">* Необходимо ввести телефон</span>
+                    </div>
                 </label>
                 <div class="form__action">
                     <button type="submit" class="btn form__btn">Оформить заказ</button>
@@ -265,5 +268,7 @@
         }
     })
 </script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="scripts/main.js"></script>
 </body>
 </html>

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/eugenenazirov/macaroons-with-js/issues"
   },
-  "homepage": "https://github.com/eugenenazirov/macaroons-with-js#readme"
+  "homepage": "https://github.com/eugenenazirov/macaroons-with-js#readme",
+  "dependencies": {
+    "jquery": "^3.6.1"
+  }
 }
