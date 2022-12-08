@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/loader.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -183,26 +184,26 @@
                 <img src="images/strawberry1.png" alt="Клубника" class="strawberry_left-img">
             </div>
             <img src="images/order-macaroon.png" alt="Закажи макарун!" class="order__image-img"></div>
-        <div class="order__info">
+        <div class="order__info" id="formInfo">
             <h2 class="order__title">Закажите макарун!</h2>
             <p class="order__description">Выберите понравившийся макарун, заполните форму и ожидайте звонка нашего
                 пекаря!</p>
             <form action="" method="post" class="order__form">
                 <label class="form__label form__label_choice">
                     <span class="form__input-title">Ваш выбор</span>
-                    <input type="text" name="order" class="input" placeholder="Напишите, что хотите заказать...">
+                    <input type="text" name="order" id="productInput" class="input" placeholder="Напишите, что хотите заказать...">
                     <span class="form__error hidden">* Необходимо заполнить поле заказа</span>
                 </label>
                 <label class="form__label">
                     <span class="form__input-title">Заполните данные для заказа</span>
                     <div class="input__group">
                         <span class="form__silent-label">Ваше имя</span>
-                        <input type="text" name="name" class="input input_order-data" placeholder="Ваше имя">
+                        <input type="text" id="nameInput" name="name" class="input input_order-data" placeholder="Ваше имя">
                         <span class="form__error hidden">* Необходимо ввести имя</span>
                     </div>
                     <div class="input__group">
                         <span class="form__silent-label">Ваш телефон</span>
-                        <input type="tel" name="phone" class="input input_order-data" placeholder="+375 (__) ___ - __ - __"
+                        <input type="tel" id="phoneInput" name="phone" class="input input_order-data" placeholder="+375 (__) ___ - __ - __"
                                maxlength="19">
                         <span class="form__error hidden">* Необходимо ввести телефон</span>
                     </div>
@@ -211,6 +212,13 @@
                     <button type="submit" class="btn form__btn">Оформить заказ</button>
                 </div>
             </form>
+            <div class="strawberry-image strawberry_right">
+                <img src="images/strawberry2.png" alt="Клубника">
+            </div>
+        </div>
+        <div class="order__info" id="thanksInfo">
+            <h2 class="order__title">Спасибо за Ваш заказ</h2>
+            <p class="order__description">Мы скоро свяжемся с Вами!</p>
             <div class="strawberry-image strawberry_right">
                 <img src="images/strawberry2.png" alt="Клубника">
             </div>
@@ -255,6 +263,10 @@
             <img src="images/present.png" alt="Подарок">
         </span>
     </button>
+</div>
+
+<div class="loader">
+    <div class="lds-ripple"><div></div><div></div></div>
 </div>
 
 <script>

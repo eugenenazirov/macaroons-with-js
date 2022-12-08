@@ -703,3 +703,7 @@ body {
     position: absolute;
     top: 8px;
 }
+
+#thanksInfo {
+    display: none;
+}

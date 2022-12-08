@@ -1,9 +1,10 @@
-console.log($(' .order__form .input '));
+let loader = $('.loader');
 
 const validateForm = (e) => {
     e.preventDefault();
 
-    let inputs = $(' .order__form .input ');
+    let inputs = $(' .order__form .input '),
+        errors = [];
 
     resetErrors(inputs);
 
@@ -12,8 +13,38 @@ const validateForm = (e) => {
 
         if (input.val().trim().length === 0) {
             showError(input);
+            errors.push(input);
         }
     })
+
+    if (errors.length > 0) {
+        return false;
+    }
+
+    let formData = {
+        product: $('#productInput').val(),
+        name: $('#nameInput').val(),
+        phone: $('#phoneInput').val(),
+    };
+
+    loader.css('display', 'flex');
+
+    $.ajax({
+        method: "POST",
+        url: "https://testologia.site/checkout",
+        data: formData
+    })
+        .done(function ( msg ) {
+            loader.hide();
+
+            if (msg.success === 0) {
+                alert("Возникла ошибка при оформлении заказа, позвоните нам и сделайте заказ.");
+                return false;
+            }
+
+            $('#formInfo').hide();
+            $('#thanksInfo').show();
+        })
 }
 
 function showError(input) {
