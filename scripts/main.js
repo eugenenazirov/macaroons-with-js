@@ -1,10 +1,10 @@
-let loader = $('.loader');
+let loader = $('.loader'),
+    inputs = $(' .order__form .input '),
+    errors = [];
+
 
 const validateForm = (e) => {
     e.preventDefault();
-
-    let inputs = $(' .order__form .input '),
-        errors = [];
 
     resetErrors(inputs);
 
@@ -63,5 +63,6 @@ function resetErrors(inputs) {
 }
 
 $(document).ready(() => {
+    resetErrors(inputs);
     $('.order__form').submit(validateForm);
 })

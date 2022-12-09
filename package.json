@@ -17,9 +17,13 @@
   },
   "homepage": "https://github.com/eugenenazirov/macaroons-with-js#readme",
   "dependencies": {
-    "jquery": "^3.6.1"
+    "jquery": "^3.6.1",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.56.2"
   }
 }

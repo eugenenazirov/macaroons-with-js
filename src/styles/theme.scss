@@ -1,0 +1,23 @@
+$font-stack: 'Gilroy', sans-serif;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+$font-extrabold: 800;
+
+$bg-color-saturated: #f1afb7;
+$bg-color-light: #ffefef;
+$color-white: #fff;
+
+$color-text: rgb(65, 32, 9);
+$color-input-title: rgb(18, 10, 6);
+$color-benefit-circle: #821328;
+
+$btn-gradient: 90deg, rgb(100, 9, 28) 0%, rgb(225, 87, 106) 100%;
+$btn-shadow: 0 5px 9px 1px rgba(173, 36, 61, 0.5);
+
+
+@mixin gradient($gradient-color) {
+  background-image: -moz-linear-gradient($gradient-color);
+  background-image: -webkit-linear-gradient($gradient-color);
+  background-image: -ms-linear-gradient($gradient-color);
+}
