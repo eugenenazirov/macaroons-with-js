@@ -54,6 +54,8 @@ function showError(input) {
 }
 
 function resetErrors(inputs) {
+    errors = [];
+
     inputs.each(function () {
         let input = $(this),
             inputError = input.next();
