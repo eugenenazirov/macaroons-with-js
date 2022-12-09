@@ -2,7 +2,7 @@
   "name": "macaroons-js",
   "version": "1.0.0",
   "description": "The 10th test work on ITLogia frontend course.",
-  "main": "scripts/main.js",
+  "main": "public/scripts/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

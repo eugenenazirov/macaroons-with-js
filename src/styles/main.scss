@@ -9,31 +9,31 @@
 @font-face {
   font-family: 'Tavolga Free';
   font-weight: $font-regular;
-  src: url("../fonts/tavolga-free.ttf");
+  src: url("../../public/fonts/tavolga-free.ttf");
 }
 
 @font-face {
   font-family: 'Gilroy';
   font-weight: $font-regular;
-  src: url("../fonts/gilroy-regular.ttf");
+  src: url("../../public/fonts/gilroy-regular.ttf");
 }
 
 @font-face {
   font-family: 'Gilroy';
   font-weight: $font-medium;
-  src: url("../fonts/gilroy-medium.ttf");
+  src: url("../../public/fonts/gilroy-medium.ttf");
 }
 
 @font-face {
   font-family: 'Gilroy';
   font-weight: $font-bold;
-  src: url("../fonts/gilroy-bold.ttf");
+  src: url("../../public/fonts/gilroy-bold.ttf");
 }
 
 @font-face {
   font-family: 'Gilroy';
   font-weight: $font-extrabold;
-  src: url("../fonts/gilroy-extrabold.ttf");
+  src: url("../../public/fonts/gilroy-extrabold.ttf");
 }
 
 body {
@@ -536,7 +536,7 @@ body {
     Пришлось перерисовать плашку в векторе в фигме,
     потому что в png это ну совсем убого смотрится))
     */
-    background-image: url("../images/subtitle-bg.svg");
+    background-image: url("../../public/images/subtitle-bg.svg");
     background-position: center;
     background-size: cover;
     padding: 15px 10px;
