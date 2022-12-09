@@ -155,7 +155,6 @@
   }
 
   .about__benefits {
-    padding-top: 88px;
     max-width: 542px;
     margin: 0 auto;
     grid-template-columns: repeat(2, 220px) !important;
@@ -553,10 +552,10 @@
         right: 35px;
       }
     }
-  }
 
-  .burger {
-    display: block;
+    .burger {
+      display: block;
+    }
   }
 
   .hero__info {
@@ -571,33 +570,33 @@
 
   .choose {
     padding: 100px 0;
-  }
 
-  .choose__catalog {
-    margin-top: 122px;
+    .choose__catalog {
+      margin-top: 122px;
+    }
   }
 }
 
 @media screen and (max-width: 460px) {
   .hero {
     padding-bottom: 43px;
-  }
 
-  .hero__info {
-    margin-bottom: 38px;
-  }
+    .hero__image {
+      top: calc(50%) !important;
+      left: calc(50% - 140px) !important;
 
-  .hero__title {
-    font-size: 32px !important;
-  }
+      .hero__image-img {
+        max-width: 250px !important;
+      }
+    }
 
-  .hero__image {
-    top: calc(50%) !important;
-    left: calc(50% - 140px) !important;
-  }
+    .hero__info {
+      margin-bottom: 38px;
 
-  .hero__image-img {
-    max-width: 250px !important;
+      .hero__title {
+        font-size: 32px !important;
+      }
+    }
   }
 
   .image__animation-circle1, .image__animation-circle2 {
@@ -609,29 +608,29 @@
 
   .about {
     padding: 100px 0;
-  }
 
-  .about__benefits {
-    grid-column-gap: 15px !important;
-  }
+    .about__benefits {
+      grid-column-gap: 15px !important;
 
-  .benefit__title {
-    font-size: 18px !important;
-  }
+      .benefit__title {
+        font-size: 18px !important;
+      }
 
-  .benefit__description {
-    font-size: 13px !important;
-  }
-
-  .order__container {
-    padding: 0 15px;
-  }
-
-  .order__description {
-    font-size: 16px !important;
+      .benefit__description {
+        font-size: 13px !important;
+      }
+    }
   }
 
   .order {
+    .order__container {
+      padding: 0 15px;
+    }
+
+    .order__description {
+      font-size: 16px !important;
+    }
+
     .strawberry_left {
       top: -83px;
       left: 210px;
@@ -644,14 +643,15 @@
     padding: 0 15px;
   }
 
-  .order__container {
-    padding: 0 15px;
-  }
 
   .order {
-    .strawberry_left {
-      top: -75px;
-      left: 180px;
+    .order__container {
+      padding: 0 15px;
+
+      .strawberry_left {
+        top: -75px;
+        left: 180px;
+      }
     }
   }
 }
