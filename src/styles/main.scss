@@ -79,6 +79,7 @@ body {
         [phone-start] minmax(min-content, max-content) [phone-end];
     align-items: center;
 
+
     .menu {
       grid-column: menu-start / menu-end;
 
@@ -275,73 +276,75 @@ body {
   padding: 120px 0;
   background-color: $bg-color-saturated;
 
-  .choose__title {
-    font-size: 45px;
-    font-weight: $font-regular;
-    font-family: "Tavolga", "PT Sans", sans-serif;
-    color: $color-white;
-    text-align: center;
-  }
-
-  .choose__catalog {
-    margin-top: 143px;
-    display: grid;
-    grid-template-columns: repeat(4, 263px);
-    justify-content: space-between;
-
-    .catalog__item {
-      position: relative;
-      z-index: 1;
-      border: 2px solid #fff;
-      border-radius: 20px;
+  .choose__container {
+    .choose__title {
+      font-size: 45px;
+      font-weight: $font-regular;
+      font-family: "Tavolga", "PT Sans", sans-serif;
+      color: $color-white;
       text-align: center;
-      padding: 20px;
+    }
 
-      .item__image {
-        width: 195px;
-        height: 124px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .choose__catalog {
+      margin-top: 143px;
+      display: grid;
+      grid-template-columns: repeat(4, 263px);
+      justify-content: space-between;
+
+      .catalog__item {
         position: relative;
-        z-index: 3;
-        top: -82px;
-        margin: 0 auto;
-        transition: 0.4s ease-out;
-      }
+        z-index: 1;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        text-align: center;
+        padding: 20px;
 
-      &:hover .item__image {
-        transform: scale(1.1);
-      }
-
-      .item__title {
-        font-size: 18px;
-        font-family: "Tavolga", "PT Sans", sans-serif;
-        color: $color-white;
-        font-weight: $font-regular;
-        margin-top: -40px;
-        margin-bottom: 25px;
-      }
-
-      .item__additional {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .item__text {
-          font-size: 15px;
-          color: #ffffff;
+        .item__image {
+          width: 195px;
+          height: 124px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          z-index: 3;
+          top: -82px;
+          margin: 0 auto;
+          transition: 0.4s ease-out;
         }
 
-        .item__amount {
-          margin-bottom: 15px;
+        &:hover .item__image {
+          transform: scale(1.1);
         }
 
-        .item__btn {
-          line-height: 1;
-          width: 130px;
-          height: 50px;
-          font-size: 16px;
+        .item__title {
+          font-size: 18px;
+          font-family: "Tavolga", "PT Sans", sans-serif;
+          color: $color-white;
+          font-weight: $font-regular;
+          margin-top: -40px;
+          margin-bottom: 25px;
+        }
+
+        .item__additional {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .item__text {
+            font-size: 15px;
+            color: #ffffff;
+          }
+
+          .item__amount {
+            margin-bottom: 15px;
+          }
+
+          .item__btn {
+            line-height: 1;
+            width: 130px;
+            height: 50px;
+            font-size: 16px;
+          }
         }
       }
     }
